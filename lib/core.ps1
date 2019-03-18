@@ -74,6 +74,7 @@ function get_config($name, $default) {
 
 function set_config($name, $val) {
     if(!$scoopConfig) {
+        ensure (Split-Path -Path $configFile) | Out-Null
         $scoopConfig = @{ $name = $val }
     } else {
         if($val -eq [bool]::TrueString -or $val -eq [bool]::FalseString) {
