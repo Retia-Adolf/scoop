@@ -29,7 +29,6 @@
 . "$psscriptroot\..\lib\help.ps1"
 . "$psscriptroot\..\lib\getopt.ps1"
 . "$psscriptroot\..\lib\depends.ps1"
-. "$psscriptroot\..\lib\config.ps1"
 
 reset_aliases
 
